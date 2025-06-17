@@ -1,0 +1,25 @@
+{
+   "id": 1,
+  "userId": "USER-1745842497309",
+  "email": "test@gmail.com",
+  "firstName": "John",
+  "lastName": "Doe",
+  "password": "yourpassword",
+  "gender": "male"
+}
+
+   {
+    "id": 1,
+  "programId": "PROG-1745843317543",
+  "name": "Heart Health",
+  "description": "Heart prevention and treatment program",
+  "imageUrl": null,
+  "duration": "12 weeks",
+  "difficulty": "Intermediate",
+  "createdAt": "2025-04-28T12:28:37.232Z",
+  "isActive": true
+   }
+
+   lets now implement this backend logic on enrollment on the frontend, using redux,, enrollemnt page logics should come up on client management where once we have all registered clients listed we can put an option to enroll them on diffrent programs we have on our database
+
+   here is my approach, first I started with the backend plan by designing my schemas then created the users, health programs and controllers for each, tested the endpoints using postman, then went ahead to set up my frontend using react ts and tailwind, set up redux for authentication, set up pages, components, etc 

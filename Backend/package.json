@@ -1,0 +1,40 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch ./src/server.ts",
+    "start": "node ./dist/server.js",
+    "build": "tsc",
+    "gen": "drizzle-kit generate",
+    "migrate": "tsx src/drizzle/migrate.ts",
+    "studio": "drizzle-kit studio",
+    "push": "drizzle-kit generate && tsx src/drizzle/migrate.ts"
+  },
+  "keywords": [],
+  "author": "Gideon Ngetich",
+  "license": "ISC",
+  "packageManager": "pnpm@10.8.0",
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@hono/node-server": "^1.14.1",
+    "@neondatabase/serverless": "^1.0.0",
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^16.5.0",
+    "drizzle-orm": "^0.43.1",
+    "hono": "^4.7.7",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^6.10.1"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/node": "^22.15.2",
+    "@types/nodemailer": "^6.4.17",
+    "@types/pg": "^8.11.14",
+    "drizzle-kit": "^0.31.0",
+    "pg": "^8.15.5",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3"
+  }
+}
